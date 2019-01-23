@@ -1,0 +1,26 @@
+.circle{
+    width:50%;
+    min-height: 100vh;
+    height:100%;
+    background-image: url('./logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+   
+
+}
+.circle2 {
+    width:50%;
+    min-height: 100vh;
+    height:100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 1.5em;
+    color: #fff;
+    background-color:#000;
+    flex-direction: column;
+    float: right;
+    
+  }

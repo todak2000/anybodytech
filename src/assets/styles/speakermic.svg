@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="68px" viewBox="0 0 39 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M38.29215,4.4967 L38.29215,1.4625 C38.29215,0.654225 37.63695,0 36.82965,0 C36.02235,0 35.36715,0.654225 35.36715,1.4625 L35.36715,4.4967 C35.36715,13.440375 28.090725,20.7168 19.146075,20.7168 C10.201425,20.7168 2.925,13.440375 2.925,4.4967 L2.925,1.4625 C2.925,0.654225 2.2698,0 1.4625,0 C0.6552,0 0,0.654225 0,1.4625 L0,4.4967 C0,14.559675 7.808775,22.815975 17.683575,23.5677 L17.683575,38.837175 L4.277325,38.837175 C3.470025,38.837175 2.814825,39.4914 2.814825,40.299675 C2.814825,41.10795 3.470025,41.762175 4.277325,41.762175 L34.014825,41.762175 C34.822125,41.762175 35.477325,41.10795 35.477325,40.299675 C35.477325,39.4914 34.822125,38.837175 34.014825,38.837175 L20.608575,38.837175 L20.608575,23.566725 C30.483375,22.815 38.29215,14.5587 38.29215,4.4967 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SIGN-UP-ANYBODY" transform="translate(-811.000000, -475.000000)">
+            <g id="Group-2" transform="translate(760.000000, 475.000000)">
+                <g id="Group-13" transform="translate(51.000000, 0.000000)">
+                    <path d="M19.5,41 C25.2904346,41 30,35.77632 30,29.356004 L30,11.643996 C30,5.22368005 25.2904346,0 19.5,0 C13.7095654,0 9,5.22368005 9,11.643996 L9,29.356004 C9,35.77632 13.7095654,41 19.5,41 Z" id="Path" fill="#166793" fill-rule="nonzero"></path>
+                    <g id="Group-12" transform="translate(0.000000, 26.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g mask="url(#mask-2)">
+                            <g transform="translate(-35.100000, -28.275000)">
+                                <polygon id="Rectangle" fill="#00B4CD" transform="translate(29.589186, 49.568669) rotate(27.000000) translate(-29.589186, -49.568669) " points="23.9401685 -2.43316752 35.6732416 -2.48192673 35.2382032 101.570505 23.5051301 101.619264"></polygon>
+                                <polygon id="Rectangle-Copy" fill="#0079D4" transform="translate(41.023277, 49.568669) rotate(27.000000) translate(-41.023277, -49.568669) " points="35.3742594 -2.43316752 47.1073325 -2.48192673 46.6722941 101.570505 34.939221 101.619264"></polygon>
+                                <polygon id="Rectangle-Copy-3" fill="#A7007B" transform="translate(52.878390, 49.568669) rotate(27.000000) translate(-52.878390, -49.568669) " points="47.229373 -2.43316752 58.9624462 -2.48192673 58.5274078 101.570505 46.7943346 101.619264"></polygon>
+                                <polygon id="Rectangle-Copy-2" fill="#FE006A" transform="translate(64.733504, 49.568669) rotate(27.000000) translate(-64.733504, -49.568669) " points="59.0844867 -2.43316752 70.8175598 -2.48192673 70.3825214 101.570505 58.6494483 101.619264"></polygon>
+                                <polygon id="Rectangle-Copy-4" fill="#FF7201" transform="translate(76.588618, 49.568669) rotate(27.000000) translate(-76.588618, -49.568669) " points="70.9396003 -2.43316752 82.6726735 -2.48192673 82.2376351 101.570505 70.5045619 101.619264"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
