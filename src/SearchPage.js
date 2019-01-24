@@ -21,7 +21,7 @@ class SearchPage extends Component {
         <div className='body2'>
         <div className="circle2">
             <div className="app__results">
-            <h4 style={{marginBottom:0,fontFamily:'Montserrat-Bold',fontSize:20 , textAlign:'center'}}>Search Result for </h4>
+            <h4 style={{textAlign:"center"}} className='result-item__definition'>Search Result for </h4>
             <h3 style={{fontSize:16,textTransform:"uppercase", marginTop:0,fontFamily:'Montserrat-Bold'}}>{this.props.transcript}</h3>
             <li>
                 <div style={{textAlign:'left'}}>
