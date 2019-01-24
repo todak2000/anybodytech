@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SpeakPage from './Speak';
-// import SearchPage from './SearchPage';
-import Result from './components/Results'
+ import SearchPage from './SearchPage';
+// import Result from './components/Results'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
  
@@ -15,7 +15,7 @@ class App extends Component {
           <Router>
             <div>
               <Route exact path="/" component={SpeakPage} />
-              <Route exact path="/result" render={()=><Result data={this.props.data}/>} />
+              <Route exact path="/search"  component={SearchPage} />
             </div>
           </Router>
  

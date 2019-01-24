@@ -42,14 +42,14 @@ class Workzone extends Component {
       return   <span className="transcript" key="initial">Speak Now</span> 
     }
 
-    return <span className="transcript" key="final">{this.props.transcript}</span>;
+    return <span className="transcript2" key="final">Searching... {this.props.transcript}</span>;
   };
 
   renderButton = () => {
     const text = this.props.isRecording ? 'abort' : 'mic';
     const callback = this.props.isRecording ? this.props.onRecordingAbort : this.props.onRecordingStart;
 
-    return <div><button className="mic" onClick={callback}><img style={{margin:'-11%'}}src={mic} alt=''/>{}</button></div>;
+    return <div><button className="pulse" onClick={callback}><img style={{margin:'-11%'}}src={mic} alt=''/>{}</button></div>;
   };
 }
 

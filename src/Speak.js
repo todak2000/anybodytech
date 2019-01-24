@@ -6,11 +6,16 @@ import Results from './components/Results';
 import Unsupported from './components/Unsupported';
 import config from './config';
 import './App.css';
-import { Link } from  'react-router-dom';
+import WebFont from 'webfontloader';
 
 
 
 
+WebFont.load({
+  google: {
+    families: ['Titillium Web:300,400,700', 'sans-serif','Montserrat-Regular','Montserrat-Bold']
+  }
+});
 
 
 
@@ -27,14 +32,16 @@ class Speak extends Component {
       isRecording: false,
       isFetching: false,
       results: {},
+      redirect:true,
     };
   }
-  onSearch() {
-    // Simulate AJAX call
-    setTimeout(() => {
-      this.setState({results: [0, 1, 2, 3, 4]})
-    }, 1000)
-  }
+  // componentDidMount() {
+  //   // Simulate AJAX call
+  //   setTimeout(() => {
+  //     this.props.history.push('/search');
+  //   }, 5000)
+  //  }
+   
   
   componentWillMount() {
     if (!this.state.isSpeechAvailable) return;
@@ -44,11 +51,13 @@ class Speak extends Component {
 
 render() {
   
+  
     return (
       <div className="">
       <div className=" ">
       {this.state.isSpeechAvailable ? this.renderOnSuccess() : this.renderOnError()}
       </div>
+
       </div>
     );
 }
@@ -74,19 +83,18 @@ render() {
               onRecordingStart={this.handleRecordingStart}
               onRecordingAbort={this.abortRecording}
             />
-               {/* <Results data={this.state.results}/> */}
+               
 
           </div>
        
         </div>
-        <div className="circle1">
+        <div className="circle2">
             <div className="app__results">
-            <Link to={{
-              pathname:'/result',
-              state:this.state.results
-            }}>
+            <h4 style={{marginBottom:0,fontFamily:'Montserrat-Bold',fontSize:20 }}>Search Result for </h4>
+            <h3 style={{fontSize:16,textTransform:"uppercase", marginTop:0,fontFamily:'Montserrat-Bold'}}>{this.state.transcript}</h3>
+
             <Results data={this.state.results}/>
-            </Link>
+        
             </div>
         </div>
       </div>
@@ -133,11 +141,23 @@ render() {
 
   handleSearchResponse = ({ data }) => {
     console.log(data);
+    if(data.results[0] && data.results[0].profile){
+      this.props.history.push({
+        pathname: '/search',
+        search: '?search_word=abc',
+        state: { results: data.results },
+        // data:{  results:data.results[1].profile}
+      })
+    }else{
+      alert('Sorry, we could not find the name. Kindly, check for other names');
+      
+    }
     
     
     
     let msg = new SpeechSynthesisUtterance();
     //let voices = window.speechSynthesis.getVoices();
+    
     msg.text=data.results[0].profile;
     //msg.voice = voices[0]; // Note: some voices don't support altering params
    // msg.voiceURI = 'native';

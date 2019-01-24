@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
-import { Link } from 'react-router-dom';
 import ResultItem from './ResultItem';
 
 class Results extends Component {
@@ -34,7 +33,7 @@ class Results extends Component {
             <ResultItem
               // key={result.percentage}
               profile={result.profile}
-               img_src={result.img_src}
+              img_src={result.img_src}
               description={result.description}
               percentage={result.percentage}
               likely_occupation={result.likely_occupation}
