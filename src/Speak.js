@@ -35,12 +35,7 @@ class Speak extends Component {
       redirect:true,
     };
   }
-  // componentDidMount() {
-  //   // Simulate AJAX call
-  //   setTimeout(() => {
-  //     this.props.history.push('/search');
-  //   }, 5000)
-  //  }
+  
    
   
   componentWillMount() {
@@ -73,7 +68,7 @@ render() {
     
     return (
       <div>
-        <div className="circle1">
+        <div className="body">
           <div className="circle">
             <Workzone
               className="app__workzone"
@@ -90,8 +85,8 @@ render() {
         </div>
         <div className="circle2">
             <div className="app__results">
-            <h4 style={{marginBottom:0,fontFamily:'Montserrat-Bold',fontSize:20 }}>Search Result for </h4>
-            <h3 style={{fontSize:16,textTransform:"uppercase", marginTop:0,fontFamily:'Montserrat-Bold'}}>{this.state.transcript}</h3>
+            {/* <h4 style={{marginBottom:0,fontFamily:'Montserrat-Bold',fontSize:20 }}>Search Result for </h4>
+            <h3 style={{fontSize:16,textTransform:"uppercase", marginTop:0,fontFamily:'Montserrat-Bold'}}>{this.state.transcript}</h3> */}
 
             <Results data={this.state.results}/>
         
@@ -146,7 +141,7 @@ render() {
         pathname: '/search',
         search: '?search_word=abc',
         state: { results: data.results },
-        // data:{  results:data.results[1].profile}
+        
       })
     }else{
       alert('Sorry, we could not find the name. Kindly, check for other names');
