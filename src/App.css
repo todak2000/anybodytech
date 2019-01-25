@@ -217,11 +217,43 @@ loader{
   text-align: left;
   margin-left:80px;
   font-weight: 200;
-  font-size:21px;
+  line-height: 20px;
+  font-size:16px;
   font-family: 'Montserrat-Regular'
+}
+.otherdiv{
+  width:70%;
+  background-color:blue;
+  float:'right'
+}
+.spana{
+  height:130px;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding:1%;
+
+}
+.imageDiv{
+  width:30%;
+  background-color:#232323;
+  float:'left'
+}
+
+
+.anybody{
+  margin-bottom: -10px;
 }
 .result-item__example{
   margin-top:-15px;
+}
+.result-item__definition_anybody{
+  text-align: left;
+  margin-left:80px;
+  font-weight: 200;
+  line-height: 20px;
+  font-size:18px;
+  margin-bottom:-10px;
+  font-family: 'Montserrat-Regular'
+
 }
 .App-link {
   color: #61dafb;

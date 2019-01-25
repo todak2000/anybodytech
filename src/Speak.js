@@ -136,7 +136,7 @@ render() {
 
   handleSearchResponse = ({ data }) => {
     console.log(data);
-    if(data.results[0] && data.results[0].profile){
+    if(data && data.results){
       this.props.history.push({
         pathname: '/search',
         search: '?search_word=abc',
